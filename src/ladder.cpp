@@ -96,7 +96,7 @@ void print_word_ladder(const vector<string>& ladder) {
     if (ladder.empty()) {
         cout << "No word ladder found." << endl;
     } else {
-        cout << "Word ladder found: "
+        cout << "Word ladder found: ";
         for (size_t i = 0; i < ladder.size(); ++i) {
             cout << ladder[i] << " ";
         }
