@@ -50,12 +50,12 @@ bool is_adjacent(const string& word1, const string& word2) {
 vector<string> generate_word_ladder(const string& begin_word, const string& end_word, const set<string>& word_list) {
     if (begin_word == end_word) {
         error(begin_word, end_word, "First and Last word are the same");
-        return {begin_word};
+        return {};
     }
 
     if (word_list.find(end_word) == word_list.end()) {
     	error(begin_word, end_word, ": end word is invalid");
-        return {end_word};
+        return {};
     }
 
     queue<vector<string>> ladder_queue;
